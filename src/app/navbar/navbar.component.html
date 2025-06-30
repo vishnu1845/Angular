@@ -1,0 +1,85 @@
+<nav class="navbar">
+  <div class="navbar-brand">
+    <a routerLink="/" class="brand-link">Angular Features</a>
+  </div>
+  
+
+  <ul class="navbar-menu">
+    <!-- Basics -->
+    <li class="nav-item dropdown">
+      <a href="#" class="nav-link" (click)="$event.preventDefault()">Basics</a>
+      <ul class="dropdown-menu">
+        <li><a routerLink="/basic/data-binding" routerLinkActive="active">Data Binding</a></li>
+        <li><a routerLink="/basic/directives" routerLinkActive="active">Directives</a></li>
+        <li><a routerLink="/basic/pipes" routerLinkActive="active">Pipes</a></li>
+      </ul>
+    </li>
+
+    <!-- Forms -->
+    <li class="nav-item dropdown">
+      <a href="#" class="nav-link" (click)="$event.preventDefault()">Forms</a>
+      <ul class="dropdown-menu">
+        <li><a routerLink="/forms/template-driven" routerLinkActive="active">Template Driven</a></li>
+        <li><a routerLink="/forms/reactive" routerLinkActive="active">Reactive</a></li>
+        <li><a routerLink="/forms/template-validation" routerLinkActive="active">Template + Validation</a></li>
+        <li><a routerLink="/forms/reactive-validation" routerLinkActive="active">Reactive + Validation</a></li>
+      </ul>
+    </li>
+
+    <!-- Observables -->
+    <li class="nav-item dropdown">
+      <a href="#" class="nav-link" (click)="$event.preventDefault()">Observables</a>
+      <ul class="dropdown-menu">
+        <li><a routerLink="/observables/operator" routerLinkActive="active">Operators</a></li>
+        <li><a routerLink="/observables/subject" routerLinkActive="active">Subject Types</a></li>
+      </ul>
+    </li>
+
+    <!-- Promises -->
+    <li class="nav-item">
+      <a routerLink="/promises" routerLinkActive="active" class="nav-link">Promises</a>
+    </li>
+
+    <!-- Services -->
+    <li class="nav-item dropdown">
+      <a href="#" class="nav-link" (click)="$event.preventDefault()">Services</a>
+      <ul class="dropdown-menu">
+        <li><a routerLink="/services/api-crud" routerLinkActive="active">API CRUD</a></li>
+        <li><a routerLink="/services/local-crud" routerLinkActive="active">Local JSON CRUD</a></li>
+      </ul>
+    </li>
+
+    <!-- Communication -->
+    <li class="nav-item dropdown">
+      <a href="#" class="nav-link" (click)="$event.preventDefault()">Communication</a>
+      <ul class="dropdown-menu">
+        <li><a routerLink="/communication/input-output" routerLinkActive="active">@Input/@Output</a></li>
+        <li><a routerLink="/communication/viewchild" routerLinkActive="active">ViewChild/Children</a></li>
+        <li><a routerLink="/communication/rxjs-communication" routerLinkActive="active">Subject/BehaviorSubject</a></li>
+        <li><a routerLink="/communication/storage" routerLinkActive="active">Local/Session Storage</a></li>
+      </ul>
+    </li>
+
+    <!-- Authentication -->
+    <li class="nav-item">
+      <a routerLink="/authentication" routerLinkActive="active" class="nav-link">Login</a>
+    </li>
+
+    <!-- Others -->
+    <li class="nav-item dropdown">
+      <a href="#" class="nav-link" (click)="$event.preventDefault()">Others</a>
+      <ul class="dropdown-menu">
+        <li><a routerLink="/others/lifecycle" routerLinkActive="active">Lifecycle</a></li>
+        <li><a routerLink="/others/interceptors" routerLinkActive="active">Interceptors</a></li>
+        <li><a routerLink="/others/changedetection" routerLinkActive="active">Change Detection</a></li>
+        <li><a routerLink="/others/ngtemplate" routerLinkActive="active">ng-template/ng-container</a></li>
+        <li><a routerLink="/others/viewencapsulation" routerLinkActive="active">View Encapsulation</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" (click)="toggleTheme()">
+    {{ isLightTheme ? '🌞' : '🌙' }}
+  </button>
+</nav>

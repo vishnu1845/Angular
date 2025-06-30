@@ -1,0 +1,25 @@
+.hero-background {
+  height: 100vh;
+  background-image: url('https://source.unsplash.com/random/1920x1080?technology,nature,code');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5); /* ✅ Better transparency */
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  max-width: 700px;
+}
+
+body.light .hero-content {
+  background-color: rgba(0, 0, 0, 0.1); /* ✅ lighter overlay for day */
+  color: #1F2937;
+}

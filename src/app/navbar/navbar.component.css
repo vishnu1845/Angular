@@ -1,0 +1,121 @@
+/* =========================
+   NAVBAR STYLES
+========================= */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--navbar-bg);
+  padding: 12px 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--brand-color);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* MENU */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link,
+.nav-item > a {
+  color: var(--text-primary);
+  font-size: 16px;
+  text-decoration: none;
+  padding: 8px 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-item > a:hover,
+.dropdown-menu li a:hover {
+  color: #B02A30 !important;
+  background: none;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--navbar-bg);
+  list-style: none;
+  padding: 6px 0;
+  margin: 0;
+  display: none;
+  min-width: 180px;
+  z-index: 1000;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 8px 16px;
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+/* THEME TOGGLE */
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
+/* =========================
+   THEME VARIABLES
+========================= */
+
+/* 🌞 LIGHT THEME */
+body.light-theme {
+  --bg-color: #F9F9F9;
+  --navbar-bg: #FFFFFF;
+  --text-primary: #005B75;
+  --text-secondary: #6B7280;
+  --accent-color: #B02A30;
+  --highlight-color: #F99D27;
+  --border-color: #E5E7EB;
+  --brand-color: #B02A30;
+}
+
+/* 🌙 DARK THEME */
+body.dark-theme {
+  --bg-color: #212121;
+  --navbar-bg: #07318b !important; /* NAVY BLUE */
+  --text-primary: #F3F4F6;
+  --text-secondary: #9CA3AF;
+  --accent-color: #F99D27;
+  --highlight-color: #B02A30;
+  --border-color: #374151;
+  --brand-color: #FFEB3B; /* YELLOW for Angular Features */
+}
+
+/* GLOBAL RESET */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+}
