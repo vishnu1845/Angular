@@ -7,6 +7,7 @@ import { TemplateDrivenComponent } from './template-driven/template-driven.compo
 import { ReactiveComponent } from './reactive/reactive.component';
 import { TemplateValidationComponent } from './template-validation/template-validation.component';
 import { ReactiveValidationComponent } from './reactive-validation/reactive-validation.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,7 +20,9 @@ import { ReactiveValidationComponent } from './reactive-validation/reactive-vali
   ],
   imports: [
     CommonModule,
-    FormsRoutingModule
+    FormsRoutingModule,
+    ReactiveFormsModule
+    
   ]
 })
 export class FormsModule { }
