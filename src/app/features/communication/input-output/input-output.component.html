@@ -1,1 +1,16 @@
-<p>input-output works!</p>
+<div class="container">
+    <h3>Input-Output Decorator!</h3>
+
+    <h4>Parent component</h4>
+
+    <app-child
+        [userName]="name"
+        [userAge]="age">
+    </app-child>
+
+    <app-child
+    (messageEvent)="reciveMessage($event)">
+    </app-child>
+
+    <p>Message from child {{childMessage}}</p>
+</div>

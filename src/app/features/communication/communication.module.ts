@@ -7,6 +7,7 @@ import { InputOutputComponent } from './input-output/input-output.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { RxjsCommunicationComponent } from './rxjs-communication/rxjs-communication.component';
 import { StorageComponent } from './storage/storage.component';
+import { ChildComponent } from './input-output/child/child.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { StorageComponent } from './storage/storage.component';
     InputOutputComponent,
     ViewchildComponent,
     RxjsCommunicationComponent,
-    StorageComponent
+    StorageComponent,
+    ChildComponent
   ],
   imports: [
     CommonModule,

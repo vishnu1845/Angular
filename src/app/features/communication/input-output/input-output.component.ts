@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class InputOutputComponent {
 
+  public name: string = 'Alex';
+  public age: number = 22;
+
+  public childMessage: any = '';
+
+  reciveMessage(message: string) {
+    this.childMessage = message;
+  }
 }
