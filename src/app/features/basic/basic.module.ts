@@ -6,6 +6,7 @@ import { BasicComponent } from './basic.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { PipesComponent } from './pipes/pipes.component';
   ],
   imports: [
     CommonModule,
-    BasicRoutingModule
+    BasicRoutingModule,
+    SharedModule
   ]
 })
 export class BasicModule { }

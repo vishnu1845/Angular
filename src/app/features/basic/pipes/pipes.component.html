@@ -1,1 +1,4 @@
 <p>pipes works!</p>
+
+<p>custom pipe</p>
+<p *ngFor="let person of people">{{person.name | custom:person.gender}}</p>

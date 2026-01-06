@@ -1,18 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TitleCasePipe } from './title-case.pipe';
+
 import { HighlightDirective } from './highlight.directive';
-
-
+import { CustomPipe } from './custom.pipe';
 
 @NgModule({
   declarations: [
-    TitleCasePipe,
-    HighlightDirective
+    HighlightDirective,
+    CustomPipe
   ],
   imports: [
     CommonModule
   ],
-  exports: [TitleCasePipe, HighlightDirective]
+  exports: [
+    HighlightDirective,
+    CustomPipe
+  ]
 })
-export class SharedModule { }
+export class SharedModule {}

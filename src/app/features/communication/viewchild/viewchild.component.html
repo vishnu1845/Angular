@@ -1,1 +1,12 @@
-<p>viewchild works!</p>
+<h2>ViewChild Practical Demo</h2>
+
+<input #nameInput type="text" placeholder="Enter name" />
+
+<br /><br />
+
+<app-child-viewchild></app-child-viewchild>
+
+<br />
+
+<button (click)="focusInput()" class="me-2">Focus Input</button>
+<button (click)="callChildMethod()">Call Child Method</button>
